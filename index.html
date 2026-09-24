@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Armadillo Learn</title>
+
+<link rel="icon" type="image/svg+xml" href="assets/logo/armadillo.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" id="hljs-light-theme" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+<link rel="stylesheet" href="src/css/styles.css" />
+<script src="src/js/script.js" defer></script>
+
+</head>
+<body>
+
+<nav>
+  <div class="nav-top">
+    <a class="nav-logo" href="">
+      <img src="assets/logo/armadillo_learn.svg" alt="logo" />
+    </a>
+    <div class="nav-center"></div>
+    <div class="nav-actions">
+      <button class="navbar-button" onclick="window.open('https://github.com/armadillo-software/learn.armadillohq.com', '_blank')">
+        <img class="github-icon" src="assets/icons/github.svg" alt="" height="14" />
+        Edit on GitHub
+      </button>
+      <button class="hamburger" id="hamburgerBtn">
+        <img src="assets/icons/list.svg" alt="menu" />
+      </button>
+    </div>
+  </div>
+
+  <div class="nav-bottom">
+    <a href="#" class="nav-item-link" data-md="docs/changelog.md">
+        <i class="ti ti-git-branch"></i>
+      <span>Changelog</span>
+    </a>
+    <a href="#" class="nav-item-link" data-md="docs/news.md">
+      <i class="ti ti-news"></i>
+      <span>News</span>
+    </a>
+    <a href="#" class="nav-item-link" data-md="docs/help.md">
+      <i class="ti ti-help"></i>
+      <span>Help & Support</span>
+    </a>
+    <a href="#" class="nav-item-link" data-md="licence.md">
+      <i class="ti ti-copyright"></i>
+      <span>Licence</span>
+    </a>
+  </div>
+</nav>
+
+<div class="sidebar" id="sidebar">
+  <p>Topics</p>
+  <ul class="sidebar-tree">
+    <li class="sidebar-folder">
+      <div class="folder-header">
+        <i class="ti ti-chevron-right"></i>
+        <span>Git</span>
+      </div>
+      <ul class="folder-content">
+        <li>
+          <a href="#" data-md="docs/git/git.md">
+            <span>Git Overview</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-md="docs/git/github.md">
+            <span>GitHub Overview</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="sidebar-folder">
+      <div class="folder-header">
+        <i class="ti ti-chevron-right"></i>
+        <span>Linux</span>
+      </div>
+      <ul class="folder-content">
+        <li>
+          <a href="#" data-md="docs/linux/network_traffic_analysis.md">
+            <span>Network Traffic Analysis</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-md="docs/linux/permissions.md">
+            <span>Permissions</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-md="docs/linux/working_with_files.md">
+            <span>Working with Files</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="sidebar-folder">
+      <div class="folder-header">
+        <i class="ti ti-chevron-right"></i>
+        <span>Physics</span>
+      </div>
+      <ul class="folder-content">
+        <li>
+          <a href="#" data-md="docs/physics/acceleration.md">
+            <span>Acceleration</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-md="docs/physics/circle_movement.md">
+            <span>Circle Movement</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-md="docs/physics/friction.md">
+            <span>Friction</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-md="docs/physics/kinetic_energy.md">
+            <span>Kinetic Energy</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-md="docs/physics/momentum.md">
+            <span>Momentum</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-md="docs/physics/newtons_laws.md">
+            <span>Newton's Laws</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-md="docs/physics/vectors.md">
+            <span>Vectors</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-md="docs/physics/velocity.md">
+            <span>Velocity</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="sidebar-actions">
+    <button class="navbar-button" onclick="window.open('https://github.com/armadillo-software/learn.armadillohq.com', '_blank')">
+      <img class="github-icon" src="assets/icons/github.svg" alt="" height="14" />
+      Edit on GitHub
+      <i class="ti ti-arrow-up-right"></i>
+    </button>
+  </div>
+</div>
+
+<div class="content" id="content"></div>
+
+<div class="sidebar-left">
+  <div class="toc-wrapper">
+    <div class="toc-track"></div>
+    <div class="toc-indicator" id="tocIndicator"></div>
+    <div class="toc" id="toc"></div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const folderHeaders = document.querySelectorAll('.folder-header');
+  folderHeaders.forEach(header => {
+    header.addEventListener('click', (e) => {
+      e.preventDefault();
+      const folder = header.closest('.sidebar-folder');
+      const icon = header.querySelector('.ti-chevron-right, .ti-chevron-down');
+      folder.classList.toggle('open');
+
+      if (icon) {
+        if (folder.classList.contains('open')) {
+          icon.classList.remove('ti-chevron-right');
+          icon.classList.add('ti-chevron-down');
+        } else {
+          icon.classList.remove('ti-chevron-down');
+          icon.classList.add('ti-chevron-right');
+        }
+      }
+    });
+  });
+
+  const navTabs = document.querySelectorAll('.nav-bottom .nav-item-link');
+  navTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      navTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+    });
+  });
+});
+</script>
+</body>
+</html>
