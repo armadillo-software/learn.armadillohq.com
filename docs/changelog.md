@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-direction: column; gap: 0;">
 
-  <a href="#" data-md="docs/changelog/realtime-cursors.md" style="display: flex; gap: 24px; padding: 24px 0; border-bottom: 1px solid var(--border); text-decoration: none; color: inherit; cursor: pointer; transition: opacity 0.2s ease;" onmouseover="this.style.opacity='0.75'" onmouseout="this.style.opacity='1'">
+  <a href="https://github.com/armadillo-software/learn.armadillohq.com/commit/5882a35d7a7e0152a2aed9e70a5554abd359ac51" data-md="docs/changelog/realtime-cursors.md" style="display: flex; gap: 24px; padding: 24px 0; border-bottom: 1px solid var(--border); text-decoration: none; color: inherit; cursor: pointer; transition: opacity 0.2s ease;" onmouseover="this.style.opacity='0.75'" onmouseout="this.style.opacity='1'">
     <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 8px; width: 110px; flex-shrink: 0;">
       <span style="font-size: 13px; opacity: 0.5; font-weight: 500;">Sep 23, 2026</span>
       <span style="font-size: 10px; font-weight: 450; text-transform: uppercase; background: rgba(16, 185, 129, 0.2); color: #34d399; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.5px;">+ UPDATE</span>
